@@ -1,8 +1,7 @@
 export default class Cl_examen {
-    constructor (minAprueba, valor) {
+    constructor () {
         this.estudiantes = [];
-        this.minAprueba = minAprueba;
-        this.valor = valor;
+
 
     }
 
@@ -23,7 +22,7 @@ export default class Cl_examen {
     porcentajeAprobados () {
         let contAprobados = 0;
         for (let i = 0; i < this.estudiantes.length; i++) {
-            if (this.estudiantes[i].nota >= this.minAprueba) {
+            if (this.estudiantes[i].nota >= 9.6) {
                 contAprobados ++;
             }
         }
@@ -33,7 +32,7 @@ export default class Cl_examen {
     porcentajeReprobados () {
         let contReprobados = 0;
         for (let i = 0; i < this.estudiantes.length; i++) {
-            if (this.estudiantes[i].nota < this.minAprueba) {
+            if (this.estudiantes[i].nota < 9.6) {
                 contReprobados ++;
             }
         }
