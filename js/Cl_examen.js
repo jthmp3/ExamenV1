@@ -1,8 +1,6 @@
 export default class Cl_examen {
     constructor () {
         this.estudiantes = [];
-
-
     }
 
     agregarEstudiante (estudiante) {
